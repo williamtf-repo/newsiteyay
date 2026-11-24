@@ -4,8 +4,25 @@ html {
   scroll-behavior: smooth;
 }
 body {
- .sus {
+ .scrolling {
+    padding: 40px auto;
+    z-index: -400;
     color: rgb(255);
  }
+
+.group {
+  display: flex;
+}
+
+.card {
+  height: 4em;
+  padding: 2em;
+  font-size: 3rem;
+  width: 6em;
+
+  text-align: center;
+  align-content: center;
+}
+
 }
 }
