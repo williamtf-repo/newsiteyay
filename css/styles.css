@@ -4,19 +4,25 @@ html {
   scroll-behavior: smooth;
 }
 body {
+
+  margin: 0px;
+
  .scrolling {
     padding: 40px;
-    width: 100%;
+    width: 25vh;
+    height: 100dvh;
+
     z-index: -400;
-    color: rgb(255);
     overflow: hidden;
-    transform: rotate(90);
+    animation: scrollingloop 15s infinite linear;
  }
 
 .content {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+
   gap: 1em;
 }
 
@@ -33,7 +39,12 @@ body {
   display: flex;
   text-align: center;
   align-content: center;
+  justify-content: center;
   align-items: center;
+}
+@keyframes scrollingloop {
+  from {translate: 0;}
+  to {translate: -100%}
 }
 
 }
