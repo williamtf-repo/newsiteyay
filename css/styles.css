@@ -30,7 +30,7 @@ body {
   height: 100%;
   padding: 2em;
   font-size: 3rem;
-  width: 6em;
+  width: auto;
   flex: 0 0 5em;
 
   background: rgb(150,150,150);
