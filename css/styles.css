@@ -8,9 +8,15 @@ body {
     padding: 40px auto;
     z-index: -400;
     color: rgb(255);
+    overflow-x: auto;
  }
 
-.group {
+  .scrolling::-webkit-scrollbar {
+    display: none;
+ }
+
+
+.content {
   display: flex;
 }
 
@@ -19,6 +25,7 @@ body {
   padding: 2em;
   font-size: 3rem;
   width: 6em;
+  flex: 0 0 5em;
 
   text-align: center;
   align-content: center;
