@@ -10,15 +10,18 @@ body {
     z-index: -400;
     color: rgb(255);
     overflow: hidden;
+    transform: rotate(90);
  }
 
 .content {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
 }
 
 .card {
-  margin: 1em;
-  height: 4em;
+  height: 100%;
   padding: 2em;
   font-size: 3rem;
   width: 6em;
@@ -27,7 +30,7 @@ body {
   background: rgb(150,150,150);
   border-radius: 24px;
   
-
+  display: flex;
   text-align: center;
   align-content: center;
   align-items: center;
