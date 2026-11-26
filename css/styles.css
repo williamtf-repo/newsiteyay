@@ -15,8 +15,9 @@ body {
   .w-fl {
     width: 100%;
   }
-
-
+  .w-t1 {
+    width: calc(--base-w / 1280 * 100vw);
+  }
 
  /* Height */
   .h-fl {
@@ -31,15 +32,14 @@ body {
   background-color: #f4e1cf;
 
   .scrolling {
-    padding: 40px;
-    width: 25vh;
+    min-width: calc(--base-w / 1280 * 100vw);
 
     z-index: -400;
     overflow: hidden;
     animation: scrollingloop 15s infinite linear;
   }
 
-  .content {
+  .sccontent {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,10 +49,8 @@ body {
   }
 
   .card {
-    height: 100%;
-    padding: 2em;
+    height: calc(--base-h / 1280 * 100vw);
     font-size: 3rem;
-    width: auto;
     flex: 0 0 5em;
 
     background: rgb(150,150,150);
@@ -71,13 +69,12 @@ body {
   }
 
   .center {
-    position: absolute;
+    width: auto;
     display: flex;
 
     align-items: center;
     justify-content: center;
     align-content: center;
-    aspect-ratio: 16/9;
   }
 
   .main {
