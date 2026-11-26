@@ -23,17 +23,13 @@ body {
   .h-fl {
     height: 100dvh;
   }
-  .heightmain {
-     height: calc(550 / 1280 * 100vh);
-  }
-
 
   margin: 0px;
   background-color: #f4e1cf;
 
   .scrolling {
     position: absolute;
-    min-width: calc(var(--base-w) / 1280 * 100vw);
+    min-width: calc(var(--base-w) / 4800 * 100vw);
 
     z-index: -400;
     overflow: hidden;
@@ -46,7 +42,7 @@ body {
     justify-content: center;
     flex-direction: column;
 
-    gap: 1em;
+    gap: calc(20 / 2500 * 100vw)
   }
 
   .card {
@@ -71,17 +67,26 @@ body {
 
   .center {
     width: auto;
-    display: flex;
 
-    align-items: center;
+    display: flex;
+    align-items: flex-start;
     justify-content: center;
     align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    gap: calc(20 / 2500 * 100vw);
   }
 
   .main {
     position: relative;
     background: #ec503b;
     aspect-ratio: 16/9;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
   }
 
 }
