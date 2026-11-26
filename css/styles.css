@@ -16,7 +16,7 @@ body {
     width: 100%;
   }
   .w-t1 {
-    width: calc(--base-w / 1280 * 100vw);
+    width: calc(--base-w / 4800 * 100vw);
   }
 
  /* Height */
