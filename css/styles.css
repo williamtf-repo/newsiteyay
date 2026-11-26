@@ -16,7 +16,7 @@ body {
     width: 100%;
   }
   .w-t1 {
-    width: calc(--base-w / 4800 * 100vw);
+    width: calc(var(--base-w) / 4800 * 100vw);
   }
 
  /* Height */
@@ -32,7 +32,8 @@ body {
   background-color: #f4e1cf;
 
   .scrolling {
-    min-width: calc(--base-w / 1280 * 100vw);
+    position: absolute;
+    min-width: calc(var(--base-w) / 1280 * 100vw);
 
     z-index: -400;
     overflow: hidden;
@@ -49,7 +50,7 @@ body {
   }
 
   .card {
-    height: calc(--base-h / 1280 * 100vw);
+    height: calc(var(--base-h) / 1280 * 100vw);
     font-size: 3rem;
     flex: 0 0 5em;
 
@@ -80,7 +81,7 @@ body {
   .main {
     position: relative;
     background: #ec503b;
-
+    aspect-ratio: 16/9;
   }
 
 }
