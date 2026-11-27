@@ -81,13 +81,38 @@ body {
   .main {
     position: relative;
     background: #ec503b;
-    aspect-ratio: 16/9;
+    
+    border-width: calc(10/2500 * 100vw);
+    border: #000000;
+    border-style: solid;
     
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
   }
+
+  .menu {
+    position: relative;
+    background: rgba(255, 255, 255, 0);
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .button {
+    aspect-ratio: 405/142;
+
+    background: #a5397e;
+    border-width: calc(10/2500 * 100vw);
+    border: #000000;
+    border-style: solid;
+  }
+
+
 
 }
 }
