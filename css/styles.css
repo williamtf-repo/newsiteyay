@@ -81,7 +81,7 @@ body {
   .main {
     position: relative;
     background: #ec503b;
-    
+
     border-width: calc(10/2500 * 100vw);
     border: #000000;
     border-style: solid;
@@ -107,6 +107,7 @@ body {
     aspect-ratio: 405/142;
 
     background: #a5397e;
+    margin: 0px calc(10 / 2500 * 100vw *-1);
     border-width: calc(10/2500 * 100vw);
     border: #000000;
     border-style: solid;
